@@ -233,7 +233,7 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/su" name="codenamedroid/android_system_su" remote="github" revision="ics" />
-  <project path="system/vold" name="platform/system/vold" />
+  <project path="system/vold" name="codenamedroid/android_system_vold" remote="github" revision="ics" />
   
   <project path="vendor/akm" name="codenamedroid/proprietary_vendor_akm" remote="github" revision="ics" />
   <project path="vendor/broadcom" name="codenamedroid/proprietary_vendor_broadcom" remote="github" revision="ics" />
