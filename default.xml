@@ -7,15 +7,15 @@
   <remote  name="github"
            fetch="git://github.com/" />   
     
-  <default revision="refs/tags/android-4.0.1_r1"
+  <default revision="refs/tags/android-4.0.3_r1"
            remote="aosp"
            sync-j="4" />
     
-  <project path="build" name="codenamedroid/android_build" remote="github" revision="ics" >
+  <project path="build" name="platform/build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="codenamedroid/android_bionic" remote="github" revision="ics" />
+  <project path="bionic" name="codenamedroid/android_bionic" remote="github" revision="stock-4.0.3" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
@@ -26,8 +26,13 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/crespo" name="codenamedroid/android_device_samsung_crespo" remote="github" revision="ics" />
-  <project path="device/samsung/maguro" name="codenamedroid/android_device_samsung_maguro" remote="github" revision="ics" />
+  <project path="device/moto/common" name="device/moto/common" />
+  <project path="device/moto/stingray" name="device/moto/stingray" />
+  <project path="device/moto/wingray" name="device/moto/wingray" />
+  <project path="device/samsung/crespo" name="codenamedroid/android_device_samsung_crespo" remote="github" revision="stock-4.0.3" />
+  <project path="device/samsung/crespo4g" name="codenamedroid/android_device_samsung_crespo4g" remote="github" revision="stock-4.0.3" />
+  <project path="device/samsung/maguro" name="codenamedroid/android_device_samsung_maguro" remote="github" revision="stock-4.0.3" />
+  <project path="device/samsung/toro" name="codenamedroid/android_device_samsung_toro" remote="github" revision="stock-4.0.3" />
   <project path="device/samsung/tuna" name="device/samsung/tuna" />
   <project path="device/ti/panda" name="device/ti/panda" />
   <project path="external/android-mock" name="platform/external/android-mock" />
@@ -41,6 +46,7 @@
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" />
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
+  <project path="external/bootmenu" name="codenamedroid/android_external_bootmenu" remote="github" revision="ics" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
   <project path="external/busybox" name="codenamedroid/android_external_busybox" remote="github" revision="ics" />
@@ -55,7 +61,7 @@
   <project path="external/dropbear" name="platform/external/dropbear" />
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" />
   <project path="external/easymock" name="platform/external/easymock" />
-  <project path="external/elfutils" name="codenamedroid/android_external_elfutils" remote="github" revision="ics" />
+  <project path="external/elfutils" name="codenamedroid/android_external_elfutils" remote="github" revision="stock-4.0.3" />
   <project path="external/embunit" name="platform/external/embunit" />
   <project path="external/emma" name="platform/external/emma" />
   <project path="external/esd" name="platform/external/esd" />
@@ -73,7 +79,7 @@
   <project path="external/guava" name="platform/external/guava" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
   <project path="external/hyphenation" name="platform/external/hyphenation" />
-  <project path="external/icu4c" name="codenamedroid/android_external_icu4c" remote="github" revision="ics" />
+  <project path="external/icu4c" name="codenamedroid/android_external_icu4c" remote="github" revision="stock-4.0.3" />
   <project path="external/iproute2" name="platform/external/iproute2" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
   <project path="external/iptables" name="platform/external/iptables" />
@@ -97,6 +103,7 @@
   <project path="external/libvpx" name="platform/external/libvpx" />
   <project path="external/libxml2" name="platform/external/libxml2" />
   <project path="external/libxslt" name="platform/external/libxslt" />
+  <project path="external/libyuv" name="platform/external/libyuv" />
   <project path="external/llvm" name="platform/external/llvm" />
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
   <project path="external/markdown" name="platform/external/markdown" />
@@ -118,11 +125,11 @@
   <project path="external/ppp" name="platform/external/ppp" />
   <project path="external/proguard" name="platform/external/proguard" />
   <project path="external/protobuf" name="platform/external/protobuf" />
-  <project path="external/qemu" name="codenamedroid/android_external_qemu" remote="github" revision="ics" />
+  <project path="external/qemu" name="codenamedroid/android_external_qemu" remote="github" revision="stock-4.0.3" />
   <project path="external/qemu-pc-bios" name="platform/external/qemu-pc-bios" />
   <project path="external/quake" name="platform/external/quake" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
-  <project path="external/skia" name="codenamedroid/android_external_skia" remote="github" revision="ics"/>
+  <project path="external/skia" name="codenamedroid/android_external_skia" remote="github" revision="stock-4.0.3"/>
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
   <project path="external/sqlite" name="platform/external/sqlite" />
@@ -138,19 +145,19 @@
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" />
   <project path="external/valgrind" name="platform/external/valgrind" />
-  <project path="external/webkit" name="codenamedroid/android_external_webkit" remote="github" revision="ics" />
+  <project path="external/webkit" name="codenamedroid/android_external_webkit" remote="github" revision="stock-4.0.3" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
-  <project path="external/wpa_supplicant_6" name="codenamedroid/android_external_wpa_supplicant_6" remote="github" revision="ics" />
+  <project path="external/wpa_supplicant_6" name="codenamedroid/android_external_wpa_supplicant_6" remote="github" revision="stock-4.0.3" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="codenamedroid/android_frameworks_base" remote="github" revision="ics" />
+  <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
-  <project path="frameworks/compile/slang" name="codenamedroid/android_frameworks_compile_slang" remote="github" revision="ics" />
+  <project path="frameworks/compile/slang" name="codenamedroid/android_frameworks_compile_slang" remote="github" revision="stock-4.0.3" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/media/libvideoeditor" name="platform/frameworks/media/libvideoeditor" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
@@ -159,14 +166,14 @@
   <project path="frameworks/opt/mailcommon" name="platform/frameworks/opt/mailcommon" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/support" name="platform/frameworks/support" />
-  <project path="hardware/broadcom/wlan" name="codenamedroid/android_hardware_broadcom_wlan" remote="github" revision="ics" />
+  <project path="hardware/broadcom/wlan" name="codenamedroid/android_hardware_broadcom_wlan" remote="github" revision="stock-4.0.3" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
-  <project path="hardware/libhardware" name="codenamedroid/android_hardware_libhardware" remote="github" revision="ics" />
-  <project path="hardware/libhardware_legacy" name="codenamedroid/android_hardware_libhardware_legacy" remote="github" revision="ics" />
-  <project path="hardware/msm7k" name="codenamedroid/android_hardware_msm7k" remote="github" revision="ics" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware_legacy" name="codenamedroid/android_hardware_libhardware_legacy" remote="github" revision="stock-4.0.3" />
+  <project path="hardware/msm7k" name="codenamedroid/android_hardware_msm7k" remote="github" revision="stock-4.0.3" />
   <project path="hardware/qcom/display" name="codenamedroid/android_hardware_qcom_display" remote="github" revision="ics" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
-  <project path="hardware/qcom/media" name="codenamedroid/android_hardware_qcom_media" remote="github" revision="ics" />
+  <project path="hardware/qcom/media" name="codenamedroid/android_hardware_qcom_media" remote="github" revision="stock-4.0.3" />
   <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
@@ -199,7 +206,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="codenamedroid/android_packages_apps_Settings" remote="github" revision="ics" />
+  <project path="packages/apps/Settings" name="codenamedroid/android_packages_apps_Settings" remote="github" revision="stock-4.0.3" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
@@ -230,18 +237,18 @@
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="codenamedroid/android_system_core" remote="github" revision="ics" />
-  <project path="system/extras" name="codenamedroid/android_system_extras" remote="github" revision="ics" />
+  <project path="system/core" name="codenamedroid/android_system_core" remote="github" revision="stock-4.0.3" />
+  <project path="system/extras" name="codenamedroid/android_system_extras" remote="github" revision="stock-4.0.3" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/su" name="codenamedroid/android_system_su" remote="github" revision="ics" />
-  <project path="system/vold" name="codenamedroid/android_system_vold" remote="github" revision="ics" />
+  <project path="system/vold" name="codenamedroid/android_system_vold" remote="github" revision="stock-4.0.3" />
   
-  <project path="vendor/akm" name="codenamedroid/proprietary_vendor_akm" remote="github" revision="ics" />
-  <project path="vendor/broadcom" name="codenamedroid/proprietary_vendor_broadcom" remote="github" revision="ics" />
-  <project path="vendor/imgtec" name="codenamedroid/proprietary_vendor_imgtec" remote="github" revision="ics" />
-  <project path="vendor/nxp" name="codenamedroid/proprietary_vendor_nxp"  remote="github" revision="ics" />
-  <project path="vendor/samsung" name="codenamedroid/proprietary_vendor_samsung" remote="github" revision="ics" />
+  <project path="vendor/akm" name="codenamedroid/proprietary_vendor_akm" remote="github" revision="stock-4.0.3" />
+  <project path="vendor/broadcom" name="codenamedroid/proprietary_vendor_broadcom" remote="github" revision="stock-4.0.3" />
+  <project path="vendor/imgtec" name="codenamedroid/proprietary_vendor_imgtec" remote="github" revision="stock-4.0.3" />
+  <project path="vendor/nxp" name="codenamedroid/proprietary_vendor_nxp"  remote="github" revision="stock-4.0.3" />
+  <project path="vendor/samsung" name="codenamedroid/proprietary_vendor_samsung" remote="github" revision="stock-4.0.3" />
   <project path="vendor/stock" name="codenamedroid/android_vendor_stock" remote="github" revision="ics" />
   
   <project path="android" name="codenamedroid/android_manifest" remote="github" revision="stock" />
