@@ -11,7 +11,7 @@
            remote="aosp"
            sync-j="4" />
     
-  <project path="build" name="platform/build">
+  <project path="build" name="codenamedroid/android_build" remote="github" revision="stock-4.0.3" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
