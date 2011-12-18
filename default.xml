@@ -249,8 +249,8 @@
   <project path="vendor/imgtec" name="codenamedroid/proprietary_vendor_imgtec" remote="github" revision="stock-4.0.3" />
   <project path="vendor/nxp" name="codenamedroid/proprietary_vendor_nxp"  remote="github" revision="stock-4.0.3" />
   <project path="vendor/samsung" name="codenamedroid/proprietary_vendor_samsung" remote="github" revision="stock-4.0.3" />
-  <project path="vendor/stock" name="codenamedroid/android_vendor_stock" remote="github" revision="ics" />
+  <project path="vendor/stock" name="codenamedroid/android_vendor_stock" remote="github" revision="stock-4.0.3" />
   
-  <project path="android" name="codenamedroid/android_manifest" remote="github" revision="stock" />
+  <project path="android" name="codenamedroid/android_manifest" remote="github" revision="stock-4.0.3" />
     
 </manifest>
