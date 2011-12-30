@@ -243,6 +243,8 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/su" name="codenamedroid/android_system_su" remote="github" revision="ics" />
   <project path="system/vold" name="codenamedroid/android_system_vold" remote="github" revision="stock-4.0.3" />
+    
+  <project path="tools" name="codenamedroid/android_tools" remote="github" revision="ics" />
   
   <project path="vendor/akm" name="codenamedroid/proprietary_vendor_akm" remote="github" revision="stock-4.0.3" />
   <project path="vendor/broadcom" name="codenamedroid/proprietary_vendor_broadcom" remote="github" revision="stock-4.0.3" />
