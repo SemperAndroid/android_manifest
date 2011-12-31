@@ -249,7 +249,9 @@
   <project path="vendor/akm" name="codenamedroid/proprietary_vendor_akm" remote="github" revision="stock-4.0.3" />
   <project path="vendor/broadcom" name="codenamedroid/proprietary_vendor_broadcom" remote="github" revision="stock-4.0.3" />
   <project path="vendor/imgtec" name="codenamedroid/proprietary_vendor_imgtec" remote="github" revision="stock-4.0.3" />
+  <project path="vendor/moto" name="codenamedroid/proprietary_vendor_moto"  remote="github" revision="stock-4.0.3" />
   <project path="vendor/nxp" name="codenamedroid/proprietary_vendor_nxp"  remote="github" revision="stock-4.0.3" />
+  <project path="vendor/nvidia" name="codenamedroid/proprietary_vendor_nxp"  remote="github" revision="stock-4.0.3" />
   <project path="vendor/samsung" name="codenamedroid/proprietary_vendor_samsung" remote="github" revision="stock-4.0.3" />
   <project path="vendor/cnd" name="codenamedroid/android_vendor_cnd" remote="github" revision="stock-4.0.3" />
   
