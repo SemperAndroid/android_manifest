@@ -237,7 +237,7 @@
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="codenamedroid/android_system_core" remote="github" revision="stock-4.0.3" />
+  <project path="system/core" name="codenamedroid/android_system_core" remote="github" revision="master" />
   <project path="system/extras" name="codenamedroid/android_system_extras" remote="github" revision="stock-4.0.3" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
