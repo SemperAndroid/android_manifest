@@ -46,7 +46,6 @@
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" />
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
-  <project path="external/bootmenu" name="codenamedroid/android_external_bootmenu" remote="github" revision="ics" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
   <project path="external/busybox" name="codenamedroid/android_external_busybox" remote="github" revision="ics" />
@@ -79,7 +78,7 @@
   <project path="external/guava" name="platform/external/guava" />
   <project path="external/harfbuzz" name="platform/external/harfbuzz" />
   <project path="external/hyphenation" name="platform/external/hyphenation" />
-  <project path="external/icu4c" name="codenamedroid/android_external_icu4c" remote="github" revision="stock-4.0.3" />
+  <project path="external/icu4c" name="platform/external/icu4c" />
   <project path="external/iproute2" name="platform/external/iproute2" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" />
   <project path="external/iptables" name="platform/external/iptables" />
@@ -149,7 +148,7 @@
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
-  <project path="external/wpa_supplicant_6" name="codenamedroid/android_external_wpa_supplicant_6" remote="github" revision="stock-4.0.3" />
+  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
@@ -166,18 +165,16 @@
   <project path="frameworks/opt/mailcommon" name="platform/frameworks/opt/mailcommon" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/support" name="platform/frameworks/support" />
-  <project path="hardware/broadcom/wlan" name="codenamedroid/android_hardware_broadcom_wlan" remote="github" revision="stock-4.0.3" />
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="codenamedroid/android_hardware_libhardware_legacy" remote="github" revision="stock-4.0.3" />
-  <project path="hardware/msm7k" name="codenamedroid/android_hardware_msm7k" remote="github" revision="stock-4.0.3" />
-  <project path="hardware/qcom/display" name="codenamedroid/android_hardware_qcom_display" remote="github" revision="ics" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
+  <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
-  <project path="hardware/qcom/media" name="codenamedroid/android_hardware_qcom_media" remote="github" revision="stock-4.0.3" />
+  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
   <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" />
-  <project path="hardware/ti/wlan" name="codenamedroid/android_hardware_ti_wlan" remote="github" revision="ics" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
@@ -185,7 +182,7 @@
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
-  <project path="packages/apps/Camera" name="codenamedroid/android_packages_apps_Camera" remote="github" revision="stock-4.0.3" />
+  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
@@ -242,7 +239,7 @@
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/su" name="codenamedroid/android_system_su" remote="github" revision="ics" />
-  <project path="system/vold" name="codenamedroid/android_system_vold" remote="github" revision="stock-4.0.3" />
+  <project path="system/vold" name="platform/system/vold" />
     
   <project path="tools" name="codenamedroid/android_tools" remote="github" revision="ics" />
   
