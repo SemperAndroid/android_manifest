@@ -153,7 +153,7 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="codenamedroid/android_frameworks_base" remote="github" revision="mod-4.0.3" />
+  <project path="frameworks/base" name="codenamedroid/android_frameworks_base" remote="github" revision="mod" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/slang" name="codenamedroid/android_frameworks_compile_slang" remote="github" revision="stock-4.0.3" />
