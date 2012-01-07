@@ -1,0 +1,77 @@
+
+Links
+---------------
+
+[Setting Up Linux](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Linux.mkdn)
+[Setting Up Your Mac](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Mac.mkdn)
+[Downloading the Source](https://github.com/codenamedroid/readme-test/blob/master/Downloading.mkdn)
+[Building Android](https://github.com/codenamedroid/readme-test/blob/master/Building.mkdn)
+
+
+Building the System
+---------------
+
+The basic sequence of build commands is as follows:
+Initialize
+Initialize the environment with the envsetup.sh script. Note that replacing "source" with a single dot saves a few characters, and the short form is more commonly used in documentation.
+
+
+    . build/envsetup.sh
+    lunch
+
+
+Once you type in the lunch command you will be presented with a list of options to choose to build from. the “stock” builds are what you want to choose if you chose to download the stock branch and “codenamedoird” is what you want to choose if you chose to download the “modified” branch
+
+
+crepso = Nexus S
+
+crespo4g = Nexus S 4G
+
+maguro = Galaxy Nexus (GSM)
+
+toro = Galaxy Nexus (CDMA)
+
+stingray = Xoom 3G/4G
+
+wingray = Xoom WiFi
+
+
+Enter the number of the build you want to start and press enter
+
+
+
+Build the Code:
+
+Build everything with make. GNU make can handle parallel tasks with a -jN argument, and it's common to use a number of tasks N that's between 1 and 2 times the number of hardware threads on the computer being used for the build. E.g. on a dual-E5520 machine (2 CPUs, 4 cores per CPU, 2 threads per core), the fastest builds are made with commands between make -j16 and make -j32.
+
+
+For Examplee
+
+
+    make -j8 otapackage CND_RELEASE=true
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
