@@ -1,0 +1,92 @@
+
+Links
+---------------
+
+[Setting Up Linux](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Linux.mkdn)
+[Setting Up Your Mac](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Mac.mkdn)
+[Downloading the Source](https://github.com/codenamedroid/readme-test/blob/master/Downloading.mkdn)
+[Building Android](https://github.com/codenamedroid/readme-test/blob/master/Building.mkdn)
+
+
+Downloading The Source
+---------------
+
+
+Installing Repo
+
+
+Repo is a tool that makes it easier to work with Git in the context of Android. For more information about Repo, see Version Control.
+
+
+To install, initialize, and configure Repo, follow these steps:
+
+
+Make sure you have a bin/ directory in your home directory, and that it is included in your path by using the following commands.
+
+
+    mkdir ~/bin 
+    PATH=~/bin:$PATH
+    
+    
+Download the Repo script and ensure it is executable:
+
+
+     curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+     chmod a+x ~/bin/repo
+     
+     
+After installing repo: 
+
+Open the android disk that you have just created in your home directory by typing the following:
+
+
+    mkdir system
+    cd system
+    
+    
+Initialize the repository of your choice:
+
+to initialize the stock rom repository
+
+
+    repo init -u git://github.com/codenamedroid/android_manifest.git -b stock
+    
+    
+or to initialize the modified rom repository
+
+
+    repo init -u git://github.com/codenamedroid/android_manifest.git -b mod
+    
+
+Getting the files
+To pull down files to your working directory from the repositories as specified in the default manifest, run
+
+
+    repo sync
+
+
+The Android source files will be located in your working directory under their project names. The initial sync operation will take an hour or more to complete.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

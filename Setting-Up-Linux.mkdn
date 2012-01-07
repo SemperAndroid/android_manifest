@@ -1,0 +1,72 @@
+
+Links
+---------------
+
+[Setting Up Linux](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Linux.mkdn)
+[Setting Up Your Mac](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Mac.mkdn)
+[Downloading the Source](https://github.com/codenamedroid/readme-test/blob/master/Downloading.mkdn)
+[Building Android](https://github.com/codenamedroid/readme-test/blob/master/Building.mkdn)
+
+
+Setting Up Linux
+---------------
+
+Installing the JDK
+The Sun JDK is no longer in Ubuntu's main package repository. In order to download it, you need to add the appropriate repository and indicate to the system which JDK should be used.
+
+
+    sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
+    sudo apt-get update
+    sudo apt-get install sun-java6-jdk
+    
+    
+Installing required packages
+
+64-bit (recommended)
+
+
+    sudo apt-get install git-core gnupg flex bison gperf build-essential \
+    zip curl zlib1g-dev libc6-dev lib32ncurses5-dev ia32-libs \
+    x11proto-core-dev libx11-dev lib32readline-gplv2-dev lib32z-dev \
+    libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown \
+    libxml2-utils xsltproc
+    
+    
+On Ubuntu 10.10:
+
+
+    sudo ln -s /usr/lib32/mesa/libGL.so.1 /usr/lib32/mesa/libGL.so
+    
+On Ubuntu 11.10:
+
+
+    sudo ln -s /usr/lib/i386-linux-gnu/libX11.so.6 /usr/lib/i386-linux-gnu/libX11.so
+    
+    
+Configuring USB Access
+
+Under GNU/linux systems (and specifically under Ubuntu systems), regular users can't directly access USB devices by default. The system needs to be configured to allow such access.
+
+The recommended approach is to create a file /etc/udev/rules.d/51-android.rules (as the root user) and to copy the following lines in it. must be replaced by the actual username of the user who is authorized to access the phones over USB.
+
+    # adb protocol on passion (Nexus One)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4e12", MODE="0600", OWNER="<username>"
+    # fastboot protocol on passion (Nexus One)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0bb4", ATTR{idProduct}=="0fff", MODE="0600", OWNER="<username>"
+    # adb protocol on crespo/crespo4g (Nexus S)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4e22", MODE="0600", OWNER="<username>"
+    # fastboot protocol on crespo/crespo4g (Nexus S)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4e20", MODE="0600", OWNER="<username>"
+    # adb protocol on stingray/wingray (Xoom)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="22b8", ATTR{idProduct}=="70a9", MODE="0600", OWNER="<username>"
+    # fastboot protocol on stingray/wingray (Xoom)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="708c", MODE="0600", OWNER="<username>"
+    # adb protocol on maguro/toro (Galaxy Nexus)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="6860", MODE="0600", OWNER="<username>"
+    # fastboot protocol on maguro/toro (Galaxy Nexus)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4e30", MODE="0600", OWNER="<username>"
+    # adb protocol on panda (PandaBoard)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0451", ATTR{idProduct}=="d101", MODE="0600", OWNER="<username>"
+    # fastboot protocol on panda (PandaBoard)
+    SUBSYSTEM=="usb", ATTR{idVendor}=="0451", ATTR{idProduct}=="d022", MODE="0600", OWNER="<username>"
+

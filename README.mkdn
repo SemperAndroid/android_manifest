@@ -1,14 +1,53 @@
 
 Getting Started
+===========
+  
+  
+[Setting Up Linux](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Linux.mkdn)
+[Setting Up Your Mac](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Mac.mkdn)
+[Downloading the Source](https://github.com/codenamedroid/readme-test/blob/master/Downloading.mkdn)
+[Building Android](https://github.com/codenamedroid/readme-test/blob/master/Building.mkdn)
+    
+    
+Advanced Developers:
 ---------------
+          
+    
+to initialize the stock rom repository
 
-To get started with Android/Codename Android, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/initializing.html).
 
-To initialize your local repository using the Project Codename: Android trees, use a command like this:
+    repo init -u git://github.com/codenamedroid/android_manifest.git -b stock
+    
+    
+or to initialize the modified rom repository
 
-    repo init -u git://github.com/codenamedroid/android_manifest.git -b mod-4.0.3
 
-Then to sync up:
+    repo init -u git://github.com/codenamedroid/android_manifest.git -b mod
 
-    repo sync
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
