@@ -1,13 +1,4 @@
 
-Links
----------------
-
-[Setting Up Linux](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Linux.mkdn)
-[Setting Up Your Mac](https://github.com/codenamedroid/readme-test/blob/master/Setting-Up-Mac.mkdn)
-[Downloading the Source](https://github.com/codenamedroid/readme-test/blob/master/Downloading.mkdn)
-[Building Android](https://github.com/codenamedroid/readme-test/blob/master/Building.mkdn)
-
-
 Building the System
 ---------------
 
