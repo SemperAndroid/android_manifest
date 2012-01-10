@@ -1,0 +1,78 @@
+Codename Android
+===============
+
+
+Follow Us
+---------
+ 
+[Google+](https://plus.google.com/b/104583231915929244830/104583231915929244830/posts)
+
+[Twitter](http://twitter.com/CodenameAndroid)
+
+DEVICES
+---------
+
+* Galaxy Nexus (GSM/CDMA) - Released
+* Nexus S (GSM/CDMA) - Scheduled for release
+* Xoom (3G/4G/WiFi) - Scheduled for release
+
+CHANGELOG
+---------
+
+### 1.0.0
+* Common: Built off of clean Android 4.0.3 source (Google)
+* Common: Resurrected Android Screen Candy/Android Screen Savers (when charging - display settings) - codenamedroid
+* Common: Reboot menu w/Hotboot (restart) - CM/Liquid0624
+* Common: Pulldown toggles w/LTE toggle  - cvpcs/pedlar/gsarrica/CM
+* Common: Updateed the pulldown toggles background w/ICS styling (looks cleaner) - codenamedroid
+* Common: Camera smooth zoom - jdkoreclipse
+* Common: NaviBar customization - Danesh
+* Common: Customize your carrier label - romanbb
+* Common: Center/Hide/AM-PM Styles/Color Clock Options - romanbb
+* Common: Centered lockscreen widgets - codenamedroid
+* Common: Phone and Messaging on Lockscreen - xoomdev (images by WJD Designs)
+* Common: Quad Targets w/Hidden Unlock button on the bottom - codenamedroid
+* Common: Switch Sound Toggle for Camera on the lockscreen - codenamedroid
+* Common: Decreased wait time for rotation - KeJar/XoomDev
+* Common: Launcher based on Trebuchet (nebkat) but with extra tweaks and changes - codenamedroid
+* Common: Enable/Disable Alarm Icon in the statusbar - romanbb
+* Common: Automatic Backlight settings - CM
+* Common: Option to disable/enable menu to unlock - romanbb
+* Common: Overclocking settings - CM7
+* Common: Voltage control settings - KeJar/JRummy
+* Common: Battery percentage settings - romanbb
+* Common: Option for persistat menu button in navigation bar - romanbb modified by codenamedroid
+* Common: GAPPS Package built by KeJar31 modified by codenamedroid
+* Common: Real rotation lock using the ICS API - jonasl
+* Common: Toggle for CRT off animation - romanbb
+* Common: LCD-optimized text rendering - cyanogen
+* Common: Allow system user to modify cpufreq control files - NameLessJedi
+* Common: Accept all flie types for inbound bluetooth file transfers - vianney
+* Common: Download any file type - eddieringle
+* Common: OI FileManager (compiled with the ICS SDK) - GummyNex
+* Common: Dialpad: perform search when retrieving last dialled number - ntfreak
+* Common: Add support for Caller Name Display - kenshin
+* Common: Facebook sync - romanbb
+* Common: T9 Dialer - CM
+* Common: CNDSettings - codenamedroid 
+(layout originally based off of Pedlar/Danesh/alankila's work - all other features
+except notification widgets, backlight, and onscreen controls added in and reworked by codenamedroid)
+
+* Galaxy Nexus: LED pulse options (color/duration/frequency) - romanbb
+* Galaxy Nexus: Hardware Rendering by default - KalimochoAz
+* Nexus S (3G/4G): Long Press Home to Kill - nebkat/CM
+* Nexus S (4G): Fix file downloads via browser over WiMax - burnsra
+* Xoom (WiFi): Lots of device configuration changes- Takazumi Matsumoto/Neil Perry
+
+
+Exta Tools (Provided by CM):
+
+Bash/
+Lsof/
+Nano/
+OpenVPN/
+libncurses/
+Busybox/
+Rsync/
+Superuser app - ChainsDD
+
