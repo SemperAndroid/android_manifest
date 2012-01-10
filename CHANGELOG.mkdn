@@ -26,7 +26,8 @@ CHANGELOG
 * Common: Pulldown toggles w/LTE toggle  - cvpcs/pedlar/gsarrica/CM
 * Common: Updateed the pulldown toggles background w/ICS styling (looks cleaner) - codenamedroid
 * Common: Camera smooth zoom - jdkoreclipse
-* Common: NaviBar customization - Danesh
+* Common: NavBar customization - Danesh
+* Common: Custom NavBar controls color - romanbb
 * Common: Customize your carrier label - romanbb
 * Common: Center/Hide/AM-PM Styles/Color Clock Options - romanbb
 * Common: Centered lockscreen widgets - codenamedroid
@@ -42,7 +43,6 @@ CHANGELOG
 * Common: Voltage control settings - KeJar/JRummy
 * Common: Battery percentage settings - romanbb
 * Common: Option for persistat menu button in navigation bar - romanbb modified by codenamedroid
-* Common: GAPPS Package built by KeJar31 modified by codenamedroid
 * Common: Real rotation lock using the ICS API - jonasl
 * Common: Toggle for CRT off animation - romanbb
 * Common: LCD-optimized text rendering - cyanogen
